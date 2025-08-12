@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adityan Thampy — Portfolio</title>
+  <style>
+    :root{
+      --bg:#ffffff;
+      --primary:#0077b6;
+      --secondary:#90e0ef;
+      --text:#333333;
+      --muted:#555555;
+      --radius:12px;
+      --max-width:1100px;
+      --container-gap:24px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text)}
+    a{color:var(--primary);text-decoration:none}
+    header{background:linear-gradient(90deg,var(--primary), var(--secondary));color:white;padding:20px 18px}
+    .header-inner{max-width:var(--max-width);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand h1{margin:0;font-size:22px}
+    nav{display:flex;gap:14px}
+    nav a{padding:8px 12px;border-radius:6px;font-weight:600}
+    nav a:hover, nav a.active{background:rgba(255,255,255,0.2)}
+
+    .wrap{max-width:var(--max-width);margin:28px auto;padding:0 18px;display:grid;grid-template-columns:300px 1fr;gap:var(--container-gap)}
+    aside{background:#f8f9fa;padding:22px;border-radius:var(--radius);text-align:center;box-shadow:0 2px 6px rgba(0,0,0,0.1)}
+    .avatar{width:150px;height:150px;margin:auto;border-radius:50%;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    .role h2{margin:10px 0 5px;color:var(--primary)}
+    .role p{margin:0;color:var(--muted)}
+    .contact p{margin:8px 0;color:var(--muted);font-size:14px}
+
+    main{padding:6px 0}
+    .card{background:#ffffff;padding:20px;border-radius:var(--radius);margin-bottom:20px;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+    .card h2{margin:0 0 10px;color:var(--primary);font-size:18px}
+    p.lead{color:var(--muted);margin:0 0 12px;line-height:1.5}
+
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{background:var(--secondary);padding:8px 10px;border-radius:10px;font-weight:600;color:var(--text)}
+
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+    .project{padding:14px;border-radius:12px;background:#f1faff;box-shadow:0 1px 4px rgba(0,0,0,0.05);transition:transform .18s ease}
+    .project:hover{transform:translateY(-4px)}
+    .project h3{margin:0 0 8px;color:var(--primary);font-size:15px}
+    .project p{margin:0;color:var(--muted);font-size:13px}
+
+    footer{max-width:var(--max-width);margin:18px auto 40px;padding:0 18px;color:var(--muted);text-align:center;font-size:14px}
+
+    @media (max-width:900px){
+      .wrap{grid-template-columns:1fr;}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+        <div>
+          <h1>Adityan Thampy</h1>
+          <p>DevOps Engineer · Cloud · Testing</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <aside>
+      <div class="avatar">
+        <img src="WhatsApp Image 2025-08-10 at 13.38.29.jpeg" alt="Adityan Thampy">
+      </div>
+      <div class="role">
+        <h2>DevOps Engineer</h2>
+        <p>B.Tech — Electronics & Computer Engineering (AI/DS)</p>
+      </div>
+      <div class="contact">
+        <p>Email: <a href="mailto:adityanthampy@gmail.com">adityanthampy@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918421125279">+91 84211 25279</a></p>
+        <p>Location: Thiruvananthapuram, Kerala</p>
+      </div>
+    </aside>
+
+    <main>
+      <section id="about" class="card">
+        <h2>About</h2>
+        <p class="lead">I build reliable cloud-native systems and automate workflows. Currently focused on DevOps, IaC, and testing — with practical experience in provisioning cloud infra, container orchestration, and security fundamentals.</p>
+      </section>
+
+      <section id="skills" class="card">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="chip">SQL</div>
+          <div class="chip">Java</div>
+          <div class="chip">Shell Scripting</div>
+          <div class="chip">Docker</div>
+          <div class="chip">Kubernetes</div>
+          <div class="chip">Terraform</div>
+          <div class="chip">Ansible</div>
+          <div class="chip">Prometheus</div>
+          <div class="chip">Grafana</div>
+          <div class="chip">AWS</div>
+          <div class="chip">Microsoft Azure</div>
+        </div>
+      </section>
+
+      <section id="experience" class="card">
+        <h2>Experience</h2>
+        <h3>Cisco — Cybersecurity Intern</h3>
+        <p class="lead">Gained hands-on familiarity with common threat types, secure networking practices, and fundamentals of malware detection. Applied monitoring and basic incident analysis techniques.</p>
+        <h3>Zafin Software Center Of Excellence Private Limited — Cloud Operator</h3>
+        <p class="lead">Worked on cloud infrastructure management, deployment automation, and system monitoring. Gained hands-on experience with AWS and Azure, optimized resource usage, and supported incident resolution for high-availability environments.</p>
+      </section>
+
+      <section id="projects" class="card">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project">
+            <h3>Autonomous Drone System — Search & Rescue</h3>
+            <p>Seed-funded final-year project: Autonomous navigation and 3D mapping for disaster response.</p>
+          </div>
+          <div class="project">
+            <h3>Hospital Management System — Manual Testing</h3>
+            <p>Authored and executed test cases, tracked defects using Jira, and validated workflows.</p>
+          </div>
+          <div class="project">
+            <h3>Terraform on Azure — IaC</h3>
+            <p>Provisioned repeatable infrastructure using Terraform modules and automated deployments.</p>
+          </div>
+          <div class="project">
+            <h3>API Testing with Postman</h3>
+            <p>Designed test collections, automated checks, and validated response schemas and error handling.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p class="lead">Reach out for collaboration, internships, or opportunities.</p>
+        <p>Email: <a href="mailto:adityanthampy@gmail.com">adityanthampy@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918421125279">+91 84211 25279</a></p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Adityan Thampy — Built for a modern and professional look</p>
+  </footer>
+</body>
+</html>
